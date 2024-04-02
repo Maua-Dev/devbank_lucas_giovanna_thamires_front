@@ -1,0 +1,11 @@
+
+//import '../styles/Button.css'
+interface ButtonProps{
+    text: string
+}
+export default function Button({text}:ButtonProps){
+    return <button>{text}</button>
+
+
+}
+

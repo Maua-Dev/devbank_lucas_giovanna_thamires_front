@@ -1,4 +1,20 @@
-#root {
+body{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
   margin: 0 auto;
   text-align: center;
+  color: rgb(226, 225, 228) ;
+  background-image: linear-gradient(to top, #eeaf61, #ee5d6c);
+}
+root{
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  
+  margin: 0 auto;
+  text-align: center;
+  color: rgb(226, 225, 228) ;
+  background-color: rgb(51, 191, 216);
 }
