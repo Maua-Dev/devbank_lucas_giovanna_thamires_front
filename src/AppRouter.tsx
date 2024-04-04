@@ -1,15 +1,15 @@
 
-import { BrowserRouter } from "react-router-dom";
-import HomePage from "./pages/HomePage/HomePage";
-import RegisterPage from "./pages/RegisterPage/RegisterPage";
-import Header from "./ui/components/Header/Header";
+import { BrowserRouter,  Route, Routes } from "react-router-dom";
+import Home from "./pages/home";
+
 
 export default function AppRouter(){
     return(
         <BrowserRouter>
-        <Header />
         <Routes> 
-         
+            <Route path="/" element={<Home />} />
 
+        </Routes>
+         </BrowserRouter>
     )
 }
