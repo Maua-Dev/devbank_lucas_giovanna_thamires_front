@@ -1,6 +1,7 @@
 
 
 import "../Button.css"
+
 interface ButtonProps{
     text: string
 }

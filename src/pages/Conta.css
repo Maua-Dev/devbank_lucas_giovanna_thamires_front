@@ -1,9 +1,9 @@
 /* 'Selecione o que deseja fazer' */
 .conta{
     color: #e45e5e;
+    font-size: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
 }
-

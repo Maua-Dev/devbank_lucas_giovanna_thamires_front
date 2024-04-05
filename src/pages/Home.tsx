@@ -7,11 +7,14 @@ export default function Home(){
 
   const [api, setApi] = useState("")
 
+
+
     return(
       <main
       className="home">
         
-        <img src= {devimagem}/>
+        <img 
+        src= {devimagem}/>
           <input
             className="home_input"
             placeholder="Digite o nome de sua conta bancária"
@@ -19,9 +22,7 @@ export default function Home(){
             size={50} //definição do tamanho aqui !
           />
            <Link to={"/conta"}>
-              <Button 
-              
-              text= "Entrar" />
+              <Button text= "Entrar" />
            </Link>
            </main>
     )
