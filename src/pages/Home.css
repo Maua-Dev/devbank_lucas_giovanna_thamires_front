@@ -14,3 +14,7 @@
 .home_input::placeholder{
     color:red;
 }
+
+.button_input{
+    background-color: blue;
+}
