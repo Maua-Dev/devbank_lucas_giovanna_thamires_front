@@ -1,19 +1,22 @@
     button{
-    font-size: 1.5rem;
+    
+    font-size: 30px;
     background-color:#e45e5e;
     border: none;
     padding: 8px 24px;
-    color: rgb(228, 228, 228);
+    color: rgb(255, 255, 255);
     border-radius: 17px;
     cursor: pointer;
     transition: all 0.5s ease-in-out;
-
+    border-color: rgb(255, 255, 255);
+    
     
     
 }
   
   button:hover {
-    border-color: #a7aadf;
+    border-color: #ffffff;
+    transform: scale(1.1);
   }
   
   button:focus,

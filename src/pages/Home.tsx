@@ -20,7 +20,7 @@ export default function Home(){
           />
            <Link to={"/conta"}>
               <Button 
-              className = "button_input"
+              
               text= "Entrar" />
            </Link>
            </main>

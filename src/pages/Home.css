@@ -5,16 +5,19 @@
     /* gap: 100px; */
 }
 .home_input{
-    background-color: white;
+    background-color: #e45e5e;
+    font-size: 25px;
     padding: 16px;
+    border-color: rgb(164, 83, 231);
     border-radius: 17px;
-    margin-bottom: 16px;
+    margin-bottom: 35px;
     margin-top: 100px;
 }
 .home_input::placeholder{
-    color:red;
+    color:white;
 }
 
-.button_input{
+/* .button_input{
+    
     background-color: blue;
-}
+} */
