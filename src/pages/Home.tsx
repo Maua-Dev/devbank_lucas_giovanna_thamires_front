@@ -1,14 +1,29 @@
-import { Link } from "react-router-dom";
-import Button from "../components/Button";
-import { useState } from 'react'
+import { useNavigate } from "react-router-dom";
+
+import { useContext, useEffect } from 'react'
 import "./Home.css"
 import devimagem from "../assets/devimagem.png"
+import { Dados_Conta } from "../contextoDevBank/contextoConta";
+
+
+
 export default function Home(){
+  const {api, setApi} = useContext(Dados_Conta)
+  const navegador = useNavigate()
+  
+  const iniciar = () =>  {
+    const chave = "https://r2tcz6zsokynb72jb6o4ffd5nm0ryfyz.lambda-url.us-west-2.on.aws/"
+    if(chave === api)
+      navegador("/conta")
+    else
+      alert("Erro! Conta não reconhecida.")
+  }
 
-  const [api, setApi] = useState("")
+  useEffect(()=> {
+    setApi("")
+  }, []
 
-
-
+  )
     return(
       <main
       className="home">
@@ -21,9 +36,10 @@ export default function Home(){
             onChange={(event) => setApi(event.target.value)}
             size={50} //definição do tamanho aqui !
           />
-           <Link to={"/conta"}>
-              <Button text= "Entrar" />
-           </Link>
+
+              <button
+              onClick={iniciar} >Entrar</button>
+           
            </main>
     )
 }
