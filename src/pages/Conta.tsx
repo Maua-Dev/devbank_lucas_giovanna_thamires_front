@@ -43,17 +43,19 @@ export default function Home() {
   return (
     <main
     className="conta">
-      
-      <img 
-      src= {devimagem}/>
-      
-      <div>
-        <h2>Nome {name}
-            Agencia {agency}
-            Conta {account}
-            Saldo {current_balance}    
+      <div> 
+      <div className = "box-dados-conta">
+        <h2 className="dados-conta">Nome: {name}<br/>
+            Agencia: {agency}<br/>
+            Conta: {account}<br/>
+            Saldo: {current_balance}<br/>    
       </h2>
       </div>
+      </div>
+      <img className="imagem"
+      src= {devimagem}/>
+      
+      
       <h1>Selecione o que deseja fazer:</h1>
       
       <div>
@@ -67,6 +69,9 @@ export default function Home() {
         
         <Link to={"/transacoes"}>
         <Button text="Transações"/>
+        </Link>
+        <Link to= {"/"}>
+        <Button text="Voltar"/>
         </Link>
       </div>
     </main>

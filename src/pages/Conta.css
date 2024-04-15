@@ -7,3 +7,31 @@
     align-items: center;
     gap: 10px;
 }
+.box-dados-conta{
+    text-align: right;
+    height: 110px;
+    padding: 5px;
+    width: 10%;
+    align-content: center;
+    float: right;
+    margin-right: 1%;
+    border: none;
+    background-color: rgb(218, 182, 91);
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.539) 0px 2px 4px;
+    position: absolute;
+    display: flex;
+    top: 80px;
+    left: 80px;
+    
+}
+.dados-conta{
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    font-size: 0.9vw;
+    font-family: "Lexend";
+    word-spacing: 4px;
+    margin: 4px;
+}
