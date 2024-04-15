@@ -1,16 +1,13 @@
 
 
 import "../Button.css"
-import depositar from "../assets/depositar.png";
-import retirar from "../assets/retirar.png";
-import transacao from "../assets/transacoes.png";
 
 
-interface ButtonProps{
-    text: string
+interface ButtonProps {
+    img?: string
 }
-export default function Button({text}:ButtonProps){
-    return <button>{text}</button>
+export default function Button({ img }: ButtonProps) {
+    return <button className="btn"><img src={img} className="btn-img" /></button>
 
 }
 

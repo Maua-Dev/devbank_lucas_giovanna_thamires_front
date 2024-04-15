@@ -1,58 +1,51 @@
 /* 'Selecione o que deseja fazer' */
-.conta{
+.conta {
     color: white;
     font-size: 8px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
 }
 
-.imagem-conta{
+.texto-conta {
     display: flex;
-    margin-left: 0%;
-    margin-top: 1%;
-    margin-bottom: 1%;
-    width: 20%;
-    float: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabecalho {
     background-color: #e45e5e;
     border: solid 2px rgb(231, 174, 83);
-    padding-left: 20px;
-    padding-right: 1990px;
-    padding-top:  20px;
-    padding-bottom:20px;
-    position: absolute;
-    top: 10px;
-    left:0px;
     box-shadow: rgba(248, 243, 243, 0.539) 0px 2px 4px;
-    
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 0;
 }
 
-.box-dados-conta{
-    
+.imagem-conta {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: 80px;
+}
+
+.box-dados-conta {
     text-align: right;
-    height: 125px;
     padding: 5px;
-    width: 10%;
-    align-content: center;
-    float: right;
     margin-right: 1%;
     border: none;
     background-color: #e45e5e;
     border: solid 2px rgb(231, 174, 83);
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.539) 0px 2px 4px;
-    position: absolute;
     display: flex;
-    margin-top: auto;
-    top: 35px;
-    bottom:px; 
-    left: 1990px;
-    right: 50 px;
-    
 }
-.dados-conta{
+
+.dados-conta {
     text-align: left;
     margin-top: auto;
     margin-bottom: auto;
@@ -63,7 +56,20 @@
     margin: 4px;
 }
 
-.texto-conta{
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+    width: 100vw;
+}
+
+.btn-voltar {
     position: absolute;
-    top:50px;
+    bottom: 50px;
+}
+
+.voltar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

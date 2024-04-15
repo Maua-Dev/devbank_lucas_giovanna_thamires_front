@@ -1,24 +1,30 @@
-    button{
-    
-    font-size: 30px;
-    background-color:#e45e5e;
-    padding: 8px 24px;
-    color: rgb(255, 255, 255);
-    border-radius: 17px;
-    cursor: pointer;
-    transition: all 0.5s ease-in-out;
-    border: solid 2px rgb(164, 83, 231);
+button {
+  font-size: 30px;
+  background-color: #e45e5e;
+  padding: 8px 24px;
+  color: rgb(255, 255, 255);
+  border-radius: 17px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  border: solid 2px rgb(164, 83, 231);
 }
-  
-  button:hover {
-    border-color: #ffffff;
-    transform: scale(1.1);
-  }
-  
-  button:focus,
-  button:focus-visible {
-    outline: 4px auto -webkit-focus-ring-color;
-  } 
- 
-   
-   
+
+button:hover {
+  border-color: #ffffff;
+  transform: scale(1.1);
+}
+
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.btn {
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+
+.btn-img {
+  height: 500px;
+}
