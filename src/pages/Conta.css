@@ -1,28 +1,55 @@
 /* 'Selecione o que deseja fazer' */
 .conta{
-    color: #e45e5e;
-    font-size: 12px;
+    color: white;
+    font-size: 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
 }
+
+.imagem-conta{
+    display: flex;
+    margin-left: 0%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 20%;
+    float: center;
+    background-color: #e45e5e;
+    border: solid 2px rgb(231, 174, 83);
+    padding-left: 20px;
+    padding-right: 1990px;
+    padding-top:  20px;
+    padding-bottom:20px;
+    position: absolute;
+    top: 10px;
+    left:0px;
+    box-shadow: rgba(248, 243, 243, 0.539) 0px 2px 4px;
+    
+}
+
 .box-dados-conta{
+    
     text-align: right;
-    height: 110px;
+    height: 125px;
     padding: 5px;
     width: 10%;
     align-content: center;
     float: right;
     margin-right: 1%;
     border: none;
-    background-color: rgb(218, 182, 91);
-    border-radius: 8px;
+    background-color: #e45e5e;
+    border: solid 2px rgb(231, 174, 83);
+    border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.539) 0px 2px 4px;
     position: absolute;
     display: flex;
-    top: 80px;
-    left: 80px;
+    margin-top: auto;
+    top: 35px;
+    bottom:px; 
+    left: 1990px;
+    right: 50 px;
     
 }
 .dados-conta{
@@ -30,8 +57,13 @@
     margin-top: auto;
     margin-bottom: auto;
     color: white;
-    font-size: 0.9vw;
-    font-family: "Lexend";
+    font-size: 25px;
+    font-family: "arial";
     word-spacing: 4px;
     margin: 4px;
+}
+
+.texto-conta{
+    position: absolute;
+    top:50px;
 }
