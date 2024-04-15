@@ -41,7 +41,7 @@
     background-color: #e45e5e;
     border: solid 2px rgb(231, 174, 83);
     border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.539) 0px 2px 4px;
+    box-shadow: rgba(248, 243, 243, 0.539);
     display: flex;
 }
 
