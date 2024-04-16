@@ -2,7 +2,7 @@
 import { BrowserRouter,  Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Conta from "./pages/Conta";
-// import Deposito from "./pages/Deposito";
+import Deposito from "./pages/Deposito";
 // import Saque from "./pages/Saque";
 // import Transacoes from "./pages/Deposito";
 
@@ -14,8 +14,9 @@ export default function AppRouter(){
         <Routes> 
             <Route path="/" element={<Home />} />
             <Route path="/conta" element={<Conta />} />
+             <Route path="/depositar" element={<Deposito />} /> 
             {/* <Route path="/saque" element={<Saque />} />
-            <Route path="/Deposito" element={<Deposito />} />
+            
             <Route path="/Transacoes" element={<Transacoes />} /> */}
         </Routes>
          </BrowserRouter>

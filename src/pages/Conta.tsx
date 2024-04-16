@@ -28,10 +28,8 @@ import depositar from "../assets/depositar.png"
 import retirar from "../assets/retirar.png"
 import transacao from "../assets/transacao.png"
 
-// import depositar from "../assets/depositar.png";
-// import retirar from "../assets/retirar.png";
-// import transacao from "../assets/transacao.png";
-export default function Home() {
+
+export default function Conta() {
 
   const { setName, setAgency, setAccount, setCurrent_Balance, api, name, agency, account, current_balance } = useContext(Dados_Conta)
   const chamaApi = async () => {
