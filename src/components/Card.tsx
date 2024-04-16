@@ -1,15 +1,26 @@
-import {useState} from 'react';
+import { useState } from 'react';
 
-interface CardProps{
-    img:string
+interface CardProps {
+  number: number,
+  value: number,
+  setValue: React.Dispatch<React.SetStateAction<number>>
 }
 
-export default function cardTwo({img}: CardProps){
-    const [two, setTwo] = useState(0)
+export default function Card({ number, value, setValue }: CardProps) {
 
-    const increase = () => {
-       
-      setTwo(( currentTwo => currentTwo + 1))
-        
-    }
+
+  return (
+    <div className='card'>
+      <h1 className='card-title'>{number}</h1>
+      <div className='values'>
+        <h2 className="quantidades">
+          Quantidade
+        </h2>
+        <button onClick={() => setValue(value - 1)}>-</button>
+        <p className='card-value'>{value}</p>
+        <button onClick={() => setValue(value + 1)}>+</button>
+
+      </ div>
+    </div>
+  );
 }

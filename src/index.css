@@ -29,7 +29,7 @@ body {
 /* texto do título ''DevBank'' */
 h1 {
   font-size: 9.0em;
-  line-height: 0.2;
+  /* line-height: 0.2; */
 
 }
 
