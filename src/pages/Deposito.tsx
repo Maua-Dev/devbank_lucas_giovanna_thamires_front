@@ -1,7 +1,18 @@
+import { Link } from "react-router-dom";
 import devimagem from "../assets/devimagem.png";
-import { useContext, useEffect } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import axios from "axios";
+import "./Deposito.css"
+import Card from "../components/Card";
 import { Dados_Conta } from "../contextoDevBank/contextoConta";
+//importação das notinhas
+import nota2 from "../assets/nota2.png";
+import nota5 from "../assets/nota5.png";
+import nota10 from "../assets/nota10.png";
+import nota20 from "../assets/nota20.png";
+import nota50 from "../assets/nota50.png";
+import nota100 from "../assets/nota100.png";
+import nota200 from "../assets/nota200.png";
 export default function Deposito(){
     
     const { setName, setAgency, setAccount, setCurrent_Balance, api, name, agency, account, current_balance } = useContext(Dados_Conta)
@@ -34,6 +45,17 @@ export default function Deposito(){
         </div>
       </div>
 
+      <div className= "cédulas-cima">
+        <img src={nota2}/>
+        <h2 className="quantidades">
+          Quantidade
+        </h2>
+        
+      </div>
+
+      <Link className="voltar" to={"/conta"}>
+        <button className="btn-voltar">Voltar</button>
+      </Link>
     </main>
     )
 }
