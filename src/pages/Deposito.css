@@ -62,13 +62,21 @@
 
 .cédulas-cima {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     flex-direction: row;
-    gap: 150px;
+    padding-left: 100px;
+    padding-right: 100px;
+    gap: 60px;
+    margin-top: 100px;
 }
 
 .card {
     display: flex;
     flex-direction: column;
+    background-color: #e45e5e;
+    padding: 10px;
+    border-radius: 15px;
 }
 
 .values {
@@ -88,18 +96,15 @@
 
 .quantidades{
     font-size: 25px;
-    position: absolute;
-    bottom: 320px;
     background-color: #e45e5e;
     border: solid 2px rgb(231, 174, 83);
     padding: 10px;
     border-radius: 100px;
-
+    margin-top: 15px;
 }
 
 .frase-total-depositado{
-    display: flex;
-    
+    display: top;
 }
 
 .box-numeros{
@@ -109,6 +114,10 @@
 }
 
 .box-numeros-quase-transparentes{
-    background-color: aliceblue;
-    paddinh:1
+    background-color: rgb(189, 177, 16);
+    width: 1000px;
+    border-radius: 15px;
+}
+.texto-conta{
+    font-size: 45px;
 }

@@ -1,0 +1,123 @@
+.saque {
+    color: white;
+    font-size: 8px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cabecalho {
+    background-color: #e45e5e;
+    border: solid 2px rgb(231, 174, 83);
+    box-shadow: rgba(248, 243, 243, 0.539) 0px 2px 4px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 0;
+}
+
+.imagem-conta {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    height: 80px;
+}
+
+.box-dados-conta {
+    text-align: right;
+    padding: 5px;
+    margin-right: 1%;
+    border: none;
+    background-color: #e45e5e;
+    border: solid 2px rgb(231, 174, 83);
+    border-radius: 10px;
+    box-shadow: rgba(248, 243, 243, 0.539);
+    display: flex;
+}
+
+.dados-conta {
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: white;
+    font-size: 25px;
+    font-family: "arial";
+    word-spacing: 4px;
+    margin: 4px;
+}
+
+.btn-voltar {
+    position: absolute;
+    bottom: 50px;
+}
+
+.voltar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cédulas-cima {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    padding-left: 100px;
+    padding-right: 100px;
+    gap: 60px;
+    margin-top: 100px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #e45e5e;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.values {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6px;
+}
+
+.card-value {
+    font-size: 32px;
+}
+
+.card-title {
+    margin-bottom: 12px;
+}
+
+.quantidades{
+    font-size: 25px;
+    background-color: #e45e5e;
+    border: solid 2px rgb(231, 174, 83);
+    padding: 10px;
+    border-radius: 100px;
+    margin-top: 15px;
+}
+
+.frase-total-sacado{
+    display: top;
+}
+
+.box-numeros{
+    background-color: #e45e5e;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.box-numeros-quase-transparentes{
+    background-color: rgb(189, 177, 16);
+    width: 1000px;
+    border-radius: 15px;
+}
+.texto-conta{
+    font-size: 45px;
+}
