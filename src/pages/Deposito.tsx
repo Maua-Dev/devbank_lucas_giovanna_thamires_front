@@ -5,10 +5,18 @@ import axios from "axios";
 import "./Deposito.css"
 import Card from "../components/Card";
 import { Dados_Conta } from "../contextoDevBank/contextoConta";
-//importação das notinhas
+
+
 export default function Deposito() {
+
   const [dois, setDois] = useState(0)
   const [cinco, setCinco] = useState(0)
+  const [dez, setDez] = useState(0)
+  const [vinte, setVinte] = useState(0)
+  const [cinquenta, setCinquenta] = useState(0)
+  const [cem, setCem] = useState(0)
+  const [duzentos, setDuzentos] = useState(0)
+  
   const [totalDepositado, setTotalDepositado] = useState(0)
 
   const { setName, setAgency, setAccount, setCurrent_Balance, api, name, agency, account, current_balance } = useContext(Dados_Conta)
@@ -27,8 +35,8 @@ export default function Deposito() {
   }, [])
 
   useEffect(() => {
-    setTotalDepositado(dois * 2 + cinco * 5)
-  }, [dois, cinco])
+    setTotalDepositado(dois * 2 + cinco * 5 + dez *10 + vinte * 20 + cinquenta * 50 + cem * 100 + duzentos * 200)
+  }, [dois, cinco, dez, vinte, cinquenta, cem, duzentos])
 
   return (
     <main className="deposito">
@@ -45,12 +53,52 @@ export default function Deposito() {
         </div>
       </div>
 
-      <h1>{totalDepositado}</h1>
+      <h1 className="Frase-total-depositado">Total depositado: R$ {totalDepositado},00</h1>
 
       <div className="cédulas-cima">
-        <Card number={2} value={dois} setValue={setDois} />
-        <Card number={5} value={cinco} setValue={setCinco} />
+        <div className= "box-numeros-quase-transparente">
+          <div className = "box-numeros"> 
+          <Card number={2} value={dois} setValue={setDois} />
+          </div>
+          </div>
+          <div className= "box-numeros-quase-transparente">
+          <div className = "box-numeros"> 
+          <Card number={5} value={cinco} setValue={setCinco} />
+          </div>
+          </div>
+          <div className= "box-numeros-quase-transparente">
+          <div className = "box-numeros"> 
+          <Card number={10} value={dez} setValue={setDez} />
+          </div>
+          </div>
+          <div className= "box-numeros-quase-transparente">
+          <div className = "box-numeros"> 
+          <Card number={20} value={vinte} setValue={setVinte} />
+          </div>
+          </div>
+          <div className= "box-numeros-quase-transparente">
+          <div className = "box-numeros"> 
+          <Card number={50} value={cinquenta} setValue={setCinquenta} />
+          </div>
+          </div>
+          <div className= "box-numeros-quase-transparente">
+          <div className = "box-numeros"> 
+          <Card number={100} value={cem} setValue={setCem} />
+          </div>
+          </div>
+          <div className= "box-numeros-quase-transparente">
+          <div className = "box-numeros"> 
+          <Card number={200} value={duzentos} setValue={setDuzentos} />
+          </div>
+          </div>
 
+          
+        {/* <Card number={5} value={cinco} setValue={setCinco} />
+        <Card number={10} value={dez} setValue={setDez} />
+        <Card number={20} value={vinte} setValue={setVinte} />
+        <Card number={50} value={cinquenta} setValue={setCinquenta} />
+        <Card number={100} value={cem} setValue={setCem} />
+        <Card number={200} value={duzentos} setValue={setDuzentos} /> */}
       </div>
 
       <Link className="voltar" to={"/conta"}>

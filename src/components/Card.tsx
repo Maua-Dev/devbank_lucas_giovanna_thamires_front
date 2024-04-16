@@ -6,8 +6,10 @@ interface CardProps {
   setValue: React.Dispatch<React.SetStateAction<number>>
 }
 
-export default function Card({ number, value, setValue }: CardProps) {
 
+export default function Card({ number, value, setValue }: CardProps) {
+   
+   
 
   return (
     <div className='card'>
@@ -16,11 +18,13 @@ export default function Card({ number, value, setValue }: CardProps) {
         <h2 className="quantidades">
           Quantidade
         </h2>
-        <button onClick={() => setValue(value - 1)}>-</button>
+        <button onClick={() =>setValue(value === 0 ? 0 : value -1)}>-</button>
         <p className='card-value'>{value}</p>
         <button onClick={() => setValue(value + 1)}>+</button>
+
 
       </ div>
     </div>
   );
+
 }
