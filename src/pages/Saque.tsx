@@ -67,6 +67,7 @@ export default function Saque(){
         <Link className="voltar" to={"/conta"}>
           <button className="btn-voltar">Voltar</button>
         </Link>
+        <button className="btn-sacar">Sacar</button>
       </main>
     )
 }

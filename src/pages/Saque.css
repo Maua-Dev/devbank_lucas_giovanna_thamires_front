@@ -121,3 +121,8 @@
 .texto-conta{
     font-size: 45px;
 }
+
+.btn-sacar{
+    position: absolute;
+    bottom: 200px;
+}

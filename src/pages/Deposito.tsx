@@ -68,6 +68,7 @@ export default function Deposito() {
       <Link className="voltar" to={"/conta"}>
         <button className="btn-voltar">Voltar</button>
       </Link>
+      <button className="btn-depositar">Depositar</button>
     </main>
   )
 }

@@ -18,7 +18,7 @@ export default function AppRouter(){
              <Route path="/sacar" element={<Saque />} />
             {/* <Route path="/sacar" element={<Saque />} />
             
-            <Route path="/Transacoes" element={<Transacoes />} /> */}
+            <Route path="/transacoes" element={<Transacoes />} /> */}
         </Routes>
          </BrowserRouter>
     )
