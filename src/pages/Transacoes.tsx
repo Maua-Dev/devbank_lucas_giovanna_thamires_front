@@ -27,7 +27,7 @@ export default function Transacoes(){
         <div className="cabecalho">
           <img className="imagem-conta"
             src={devimagem} />
-          <h1 className="texto-conta"> Histórico de transaç~i: </h1>
+          <h1 className="texto-conta"> Histórico de transações</h1>
           <div className="box-dados-conta">
             <h2 className="dados-conta">Nome: {name}<br />
               Agencia: {agency}<br />
@@ -36,6 +36,9 @@ export default function Transacoes(){
             </h2>
           </div>
         </div>
+        <Link className="voltar" to={"/conta"}>
+        <button className="btn-voltar">Voltar</button>
+        </Link>
         </main>
     )
 
