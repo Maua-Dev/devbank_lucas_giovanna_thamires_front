@@ -26,13 +26,25 @@ export default function Deposito() {
     setAgency(response.data.agency)
     setAccount(response.data.account)
     setCurrent_Balance(response.data.current_balance)
-    console.log(name)
   }
 
   useEffect(() => {
     chamaApi()
 
   }, [])
+
+  const deposita = async() => {
+    const resp = await axios.post(api +'/deposit',{
+        "2": dois,
+        "5": cinco,
+        "10": dez,
+        "20": vinte,
+        "50": cinquenta,
+        "100": cem,
+        "200": duzentos
+    })
+    setCurrent_Balance(resp.data.current_balance)
+  }
 
   useEffect(() => {
     setTotalDepositado(dois * 2 + cinco * 5 + dez *10 + vinte * 20 + cinquenta * 50 + cem * 100 + duzentos * 200)
@@ -68,7 +80,7 @@ export default function Deposito() {
       <Link className="voltar" to={"/conta"}>
         <button className="btn-voltar">Voltar</button>
       </Link>
-      <button className="btn-depositar">Depositar</button>
+      <button className="btn-depositar" onClick={deposita}>Depositar</button>
     </main>
   )
 }

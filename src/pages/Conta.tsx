@@ -38,7 +38,6 @@ export default function Conta() {
     setAgency(response.data.agency)
     setAccount(response.data.account)
     setCurrent_Balance(response.data.current_balance)
-    console.log(name)
   }
 
   useEffect(() => {
