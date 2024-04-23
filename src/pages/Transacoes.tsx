@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import devimagem from "../assets/devimagem.png";
 import { useContext, useEffect, useState } from 'react'
 import axios from "axios";
-import "./Transacoes.css"
+import "../styles/Transacoes.css"
 import { Dados_Conta } from "../contextoDevBank/contextoConta";
 
 
@@ -22,6 +22,14 @@ export default function Transacoes(){
 
   }, [])
 
+    //  const atualiza = async () => {
+    //    const resp = await axios.get(api +'/history'),{
+          
+    //    }
+       
+    //  }
+
+
     return(
         <main className="transacoes">
         <div className="cabecalho">
@@ -39,6 +47,7 @@ export default function Transacoes(){
         <Link className="voltar" to={"/conta"}>
         <button className="btn-voltar">Voltar</button>
         </Link>
+
         </main>
     )
 

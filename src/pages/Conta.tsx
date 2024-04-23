@@ -1,29 +1,10 @@
-// import Button from "../components/Button";
-// import { useState } from 'react'
-// export default function Conta(){
-
-//   
-
-
-
-//     return(
-//       <>
-//         <h1>Selecione o que deseja fazer</h1>
-//         <div>
-//            <Button text="Depositar" />
-//            <Button text="Sacar" />
-//         </div>
-//       </>
-//     )
-// }
-
 import { Link } from "react-router-dom";
 import Button from "../components/Button";
 import { useContext, useEffect } from 'react'
 import axios from "axios";
 import devimagem from "../assets/devimagem.png";
 import { Dados_Conta } from "../contextoDevBank/contextoConta";
-import "./Conta.css";
+import "../styles/Conta.css";
 import depositar from "../assets/depositar.png"
 import retirar from "../assets/retirar.png"
 import transacao from "../assets/transacao.png"
@@ -61,7 +42,7 @@ export default function Conta() {
         </div>
       </div>
 
-      {/* <img src={depositar}/> */}
+   
 
 
       <div className="buttons">

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import devimagem from "../assets/devimagem.png";
 import { useContext, useEffect, useState } from 'react'
 import axios from "axios";
-import "./Saque.css"
+import "../styles/Saque.css"
 import Card from "../components/Card";
 import { Dados_Conta } from "../contextoDevBank/contextoConta";
 

@@ -6,8 +6,6 @@ import Deposito from "./pages/Deposito";
 import Saque from "./pages/Saque";
 import Transacoes from "./pages/Transacoes";
 
-// import Conta from "./pages/conta";
-// <Route path="/conta" element={<Conta />} />  . PASSAR PARA O RETURN QUANDO TERMINAR CONTA
 export default function AppRouter(){
     return(
         <BrowserRouter>

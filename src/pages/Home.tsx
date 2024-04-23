@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 
 import { useContext, useEffect } from 'react'
-import "./Home.css"
+import "../styles/Home.css"
 import devimagem from "../assets/devimagem.png"
 import { Dados_Conta } from "../contextoDevBank/contextoConta";
 
