@@ -4,7 +4,7 @@ import { useContext, useEffect, useState } from 'react'
 import axios from "axios";
 import "../styles/Transacoes.css"
 import { Dados_Conta } from "../contextoDevBank/contextoConta";
-
+import historico from "../components/Historico";
 
 
 export default function Transacoes(){
@@ -22,13 +22,15 @@ export default function Transacoes(){
 
   }, [])
 
-    //  const atualiza = async () => {
-    //    const resp = await axios.get(api +'/history'),{
-          
-    //    }
-       
-    //  }
+     const atualizaHistorico = async () => {
+       const resp = await axios.get(api +'/history')
+       const historicoTransacoes = resp.data.all_transactions
+     }
 
+     useEffect(() => {
+      atualizaHistorico();
+  
+    }, [])
 
     return(
         <main className="transacoes">

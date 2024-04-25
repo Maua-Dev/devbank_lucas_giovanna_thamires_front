@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import devimagem from "../assets/devimagem.png";
 import { useContext, useEffect, useState } from 'react'
-import axios from "axios";
+import axios, { isAxiosError } from "axios";
 import "../styles/Deposito.css"
 import Card from "../components/Card";
 import { Dados_Conta } from "../contextoDevBank/contextoConta";
@@ -20,6 +20,8 @@ export default function Deposito() {
   const [totalDepositado, setTotalDepositado] = useState(0)
 
   const { setName, setAgency, setAccount, setCurrent_Balance, api, name, agency, account, current_balance } = useContext(Dados_Conta)
+
+  const [error, setError] = useState<string>("")
   const chamaApi = async () => {
     const response = await axios.get(api)
     setName(response.data.name)
@@ -34,7 +36,8 @@ export default function Deposito() {
   }, [])
 
   const deposita = async() => {
-    const resp = await axios.post(api +'/deposit',{
+    try{
+      const resp = await axios.post(api +'/deposit',{
         "2": dois,
         "5": cinco,
         "10": dez,
@@ -44,6 +47,13 @@ export default function Deposito() {
         "200": duzentos
     })
     setCurrent_Balance(resp.data.current_balance)
+    setError("")
+    }catch(e) {
+      if(isAxiosError(e)){
+        setError(e.response?.data.detail)
+      }
+    }
+    
   }
 
   useEffect(() => {
@@ -64,7 +74,7 @@ export default function Deposito() {
           </h2>
         </div>
       </div>
-
+      {error != "" ? <h1>{error}</h1> : null}
       <h1 className="frase-total-depositado">Total depositado: R$ {totalDepositado},00</h1>
 
       <div className="cédulas-cima">
