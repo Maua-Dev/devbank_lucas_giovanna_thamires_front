@@ -78,7 +78,14 @@
 .tipo-transacao{
     font-family: sans-serif;
     text-align: center;
-    background-color: green;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.transacao-saque{
+    font-family: sans-serif;
+    text-align: center;
+    background-color: re;
     border-radius: 10px;
     margin-bottom: 50px;
 }

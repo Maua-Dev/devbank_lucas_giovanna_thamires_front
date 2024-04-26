@@ -47,6 +47,8 @@ export default function Transacoes(){
             })
             
         }
+
+      
        
         useEffect(() => {
           atualizaHistorico()
@@ -73,8 +75,8 @@ export default function Transacoes(){
           const data = new Date(transacao.data)
           return(
             <div className="box-historico-transacoes">
-              <p className = "tipo-transacao">
-                Tipo: {transacao.tipo}
+              <p className = "tipo-transacao" style={{backgroundColor:transacao.tipo == 'deposit'? 'green':'red'}}>
+                Tipo: {transacao.tipo }
               </p>
               <div className="demais-dados">
               <p>
