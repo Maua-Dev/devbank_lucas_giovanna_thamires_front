@@ -76,7 +76,7 @@ export default function Transacoes(){
           return(
             <div className="box-historico-transacoes">
               <p className = "tipo-transacao" style={{backgroundColor:transacao.tipo == 'deposit'? 'green':'red'}}>
-                Tipo: {transacao.tipo }
+                Tipo: {transacao.tipo =='deposit'? 'Depósito':'Saque'}
               </p>
               <div className="demais-dados">
               <p>
