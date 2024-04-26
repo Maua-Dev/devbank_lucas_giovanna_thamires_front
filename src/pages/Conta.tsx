@@ -42,7 +42,7 @@ export default function Conta() {
         </div>
       </div>
 
-   
+
 
 
       <div className="buttons">
