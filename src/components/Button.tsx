@@ -1,5 +1,3 @@
-
-
 import "../Button.css"
 
 
@@ -11,14 +9,3 @@ export default function Button({ img }: ButtonProps) {
 
 }
 
-// export function ButtonDeposit({text}:ButtonProps){
-//     return <button>{text}<img src={depositar}/></button>
-// }
-
-// export function ButtonWithdraw({text}:ButtonProps){
-//     return <button>{text}<img src={retirar}/></button>
-// }
-
-// export function ButtonTransactions({text}:ButtonProps){
-//     return <button>{text}<img src={transacao}/></button>
-// }

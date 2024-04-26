@@ -73,9 +73,10 @@ export default function Transacoes(){
           const data = new Date(transacao.data)
           return(
             <div className="box-historico-transacoes">
-              <p>
+              <p className = "tipo-transacao">
                 Tipo: {transacao.tipo}
               </p>
+              <div className="demais-dados">
               <p>
                 Valor: R${transacao.valor}
               </p>
@@ -85,13 +86,15 @@ export default function Transacoes(){
               <p>
                 Data: {data.toLocaleString()}
               </p>
+              </div>
+              
         </div>
           )
 
         }):null}
         
         <Link className="voltar" to={"/conta"}>
-        <button className="btn-voltar">Voltar</button>
+        <button className="btn-voltar-transacoes">Voltar</button>
         </Link>
      
       

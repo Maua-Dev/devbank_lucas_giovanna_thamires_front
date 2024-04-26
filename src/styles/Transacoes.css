@@ -57,11 +57,6 @@
     margin: 4px;
 }
 
-.btn-voltar {
-    position: absolute;
-    bottom: 50px;
-}
-
 .voltar {
     display: flex;
     justify-content: center;
@@ -69,5 +64,32 @@
 }
 
 .box-historico-transacoes{
+    padding: 30px;
+    text-align: left;
+    display: row;
+    font-size: 25px;
+    background-color: #e45e5e;
+    border: solid 2px rgb(231, 174, 83);
+    border-radius: 20px;
+    margin-top:20px;
     
+}
+
+.tipo-transacao{
+    font-family: sans-serif;
+    text-align: center;
+    background-color: green;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.btn-voltar-transacoes{
+    display:bottom;
+    margin: 20px;
+    position:auto;
+}
+
+.demais-dados{
+
+    margin-bottom: 25px;
 }
